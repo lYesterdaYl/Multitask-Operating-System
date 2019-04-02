@@ -1,0 +1,9 @@
+1. For cat x y > y, the content in x will cover the content in y when I tried it in the terminal. However, if there is no error, I think x and y contents will all show in file y
+For cat x >> x, the content in x stays the same when I test in the terminal. However, if there is no error, I think content x will display twice in file x.
+2.the scripts will allows a file to be able to execute. the scripts take 1 argument, and it allows the first argument file to be executable.
+3.I use ls and wc to find out total number of files in the current directory.
+4.I use ls -l to show all the files in the current directory, and the -S option let the files display in decreasing size order.
+5.For this script, I had a little difficulty cutting out the name out of the output of groups [name]. The script will generate a whoson.log, and use the name inside the log file to call groups function each time, and write the output into file group.log.The file will display the content of group.log
+6.I use wc to find the line of group.log, and return its value in order to find the number.
+7.I take the arugement and check if it contains invalid characters for a variable, if not return yes, if yes, return no.
+8.I take the aruguments and reformat into said format in the question.
