@@ -1,0 +1,23 @@
+#!/bin/bash
+
+cfile=$0".c"
+executable=tmpExecutable
+
+#create the directory
+mkdir /tmp/temp_file/
+
+#remove the temp file recursively.
+trap "/bin/rm -rf /tmp/temp_file/" EXIT SIGHUP SIGINT SIGQUIT STGTERM
+
+#compile
+gcc -o $executableDir"/"$executableFile $cFile
+
+
+#gets all of the args for the c program execution
+for arg
+do
+	argss="$argss $arg" 
+done
+
+#execute
+/tmp/temp_file"/"$executable $argss
